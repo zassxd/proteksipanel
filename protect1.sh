@@ -75,7 +75,7 @@ class ServerDeletionService
                 }
 
                 if ($ownerId !== $user->id) {
-                    throw new DisplayException('Akses ditolak: Anda hanya dapat menghapus server milik Anda sendiri @ 𝗣𝗥𝗢𝗧𝗘𝗖𝗧 𝗕𝗬 𝗟𝗜𝗚𝗛𝗧𝗦𝗘𝗖𝗥𝗘𝗧 t. me/lightsecrett.');
+                    throw new DisplayException('Akses ditolak: Anda hanya dapat menghapus server milik Anda sendiri. Selengkapnya silahkan hubungi tim support PterokuDesu');
                 }
             }
             // jika $user->id === 1, lanjutkan (admin super)
