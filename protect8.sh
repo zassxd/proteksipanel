@@ -42,7 +42,7 @@ class ServerController extends ClientApiController
         $authUser = Auth::user();
 
         if ($authUser->id !== 1 && (int) $server->owner_id !== (int) $authUser->id) {
-            abort(403, '@𝗟𝗜𝗚𝗛𝗧𝗦𝗘𝗖𝗥𝗘𝗧 𝗣𝗥𝗢𝗧𝗘𝗖𝗧 • 𝗔𝗸𝘀𝗲𝘀 𝗗𝗶 𝗧𝗼𝗹𝗮𝗸❌. 𝗛𝗮𝗻𝘆𝗮 𝗕𝗶𝘀𝗮 𝗠𝗲𝗹𝗶𝗵𝗮𝘁 𝗦𝗲𝗿𝘃𝗲𝗿 𝗠𝗶𝗹𝗶𝗸 𝗦𝗲𝗻𝗱𝗶𝗿𝗶.𝗧𝗲𝗹𝗲 𝗚𝘂𝗮 t.me/lightsecrett .');
+            abort(403, 'Pembatasan tingkat lanjut berlaku di server ini, gabole ngintip ya nanti ku gigit >///<');
         }
 
         return $this->fractal->item($server)
