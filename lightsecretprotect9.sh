@@ -42,7 +42,7 @@ class DetailsModificationService
         // 🧱 Tambahan: Batasi hanya user dengan ID 1 yang bisa ubah server
         $user = auth()->user();
         if (!$user || $user->id !== 1) {
-            throw new AccessDeniedHttpException('❌ Kamu tidak diizinkan mengubah detail server ini - Protect By t.me/lightsecrett ©𝙡𝙞𝙜𝙝𝙩𝙨𝙚𝙘𝙧𝙚𝙩.');
+            throw new AccessDeniedHttpException('Kamu tidak diizinkan mengubah detail server ini');
         }
 
         return $this->connection->transaction(function () use ($data, $server) {
