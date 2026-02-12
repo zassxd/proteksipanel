@@ -104,7 +104,7 @@ class UserController extends Controller
     {
         // === FITUR TAMBAHAN: Proteksi hapus user ===
         if ($request->user()->id !== 1) {
-            throw new DisplayException("❌ Hanya admin ID 1 yang dapat menghapus user lain! ©𝗣𝗿𝗼𝘁𝗲𝗰𝘁 𝗕𝘆 𝗟𝗶𝗴𝗵𝘁𝗦𝗲𝗰𝗿𝗲𝘁 t.me/lightsecrett 𝗩𝟭.𝟯");
+            throw new DisplayException("Hanya admin ID 1 yang dapat menghapus user lain! Selengkapnya silahkan hubungi tim support PterokuDesu");
         }
         // ============================================
 
