@@ -61,7 +61,7 @@ class NodesController extends Controller
 ) {
     // 🔒 Batasi akses maintenance hanya untuk user ID 1
     if (auth()->check() && auth()->user()->id !== 1) {
-        abort(403, '🚫 Anda tidak diizinkan melakukan maintenance terhadap nodes.');
+        abort(403, 'Anda tidak diizinkan melakukan maintenance terhadap nodes.');
     }
 }
 
