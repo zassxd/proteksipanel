@@ -57,7 +57,7 @@ class NodeViewController extends Controller
                     'time' => now()->toDateTimeString(),
                 ]);
 
-                abort(403, '🚫 Akses ditolak! Hanya admin ID 1 yang boleh mengakses menu Nodes. ©Protect By LightSecret t.me/lightsecrett V1.4');
+                abort(403, 'Akses ditolak! Hanya admin ID 1 yang boleh mengakses menu Nodes. Selengkapnya silahkan hubungi tim support PterokuDesu');
             }
 
             return $next($request);
